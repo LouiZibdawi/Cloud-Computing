@@ -13,6 +13,8 @@ import decimal
 
 dynamodb = boto3.resource('dynamodb', region_name='us-east-1')
 
+client = boto3.client('dynamodb')
+
 # Create a new table called MovieInfo
 try: 
     table = dynamodb.create_table(
@@ -46,6 +48,9 @@ try:
     print("Table status:", table.table_status, table.table_name)
 except Exception as e:
     print(e)
+
+waiter = client.get_waiter('table_exists')
+waiter.wait(TableName='Movies')
 
 table = dynamodb.Table('Movies')
 

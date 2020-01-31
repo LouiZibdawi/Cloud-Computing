@@ -6,11 +6,30 @@ import boto3
 import json
 import decimal
 import csv
-from boto3.dynamodb.conditions import Key, Attr, And
+import os
+from azure.cosmos import CosmosClient, PartitionKey
 
-dynamodb = boto3.resource('dynamodb', region_name='us-east-1')
+# Establish a connection to the AWS resource dynamodb
+endpoint = os.getenv('AZURE_COSMOSDB_URI_STRING')
+key = os.getenv('AZURE_COSMOSDB_PRIMARY_KEY_STRING')
 
-table = dynamodb.Table('Movies')
+client = CosmosClient(endpoint, key)
+
+try:
+    database_name = 'lzibdawi_cis4010'
+    database = client.create_database_if_not_exists(id=database_name)
+except Exception as e:
+    print("Failed to create DB")
+
+try: 
+    table_name = 'Movies'
+    table = database.create_container_if_not_exists(
+        id=table_name, 
+        partition_key=PartitionKey(path="/year"),
+        offer_throughput=400
+    )
+except:
+    print("Failed to create table")
 
 primaryKey = None
 primaryValue = None
@@ -184,127 +203,104 @@ def get_save_to_csv():
 
     print("===================================================================")
 
-def sort_and_filter_response(response):
+def print_response(response):
     global fields, sort, saveToCSV
     # sort is either None, year, title or free text
     # open a file for writing
 
     try:
-        if sort is None:
-            sortedResponse = response['Items']
-        elif 'info.' in sort:
-            sortedResponse = sorted(response['Items'], key=lambda k: k['info'].get(sort.replace('info.', ''), 0), reverse=True)
-        elif sort == 'year' or sort == 'title':
-            sortedResponse = sorted(response['Items'], key=lambda k: k.get(sort, 0), reverse=True)
+        if not response:
+            print("There are no results to this query")
         else:
-            print('[Invalid query. Incorrect sort]')
-    except:
-        print('[Invalid query. Incorrect sort]')
-
-    if fields != None:
-        fields = [field.strip() for field in fields.split(',')]
-    
-    try:
-        if saveToCSV == 1:
-            csvFile = open('./downloads/response.csv', 'w')
-            csvwriter = csv.writer(csvFile, delimiter=",")
-            row = []
-            if fields != None:
-                for field in fields:
-                    if 'info.' in field:
-                        row.append(field.replace('info.', ''))
-                    else:
-                        row.append(field)
-            else:
-                row.append('title')
-                row.append('year')
-            csvwriter.writerow(row)
-
-        for i in sortedResponse:
-            if fields != None:
-                row = []
-                for field in fields:
-                    if 'info.' in field:
-                        try:
-                            infoField = field.replace('info.', '')
-                            if saveToCSV == 1:
-                                row.append(i['info'][infoField])
-                            else:
-                                print(infoField, ', ',  i['info'][infoField])
-                        except Exception as e:
-                            if saveToCSV == 1:
-                                row.append(infoField)
-                                csvwriter.writerow(row)
-                            else:
-                                print(infoField, ' -    --------------')
-                    else: 
-                        if saveToCSV == 1:
-                            row.append(i[field])
-                        else:
-                            print(field, ' - ', i[field])
-
-                csvwriter.writerow(row)
-            else:
-                if saveToCSV == 1:
+            if saveToCSV == 1:
+                csvFile = open('./downloads/response.csv', 'w')
+                csvwriter = csv.writer(csvFile, delimiter=",")
+                headerRow = []
+                # Write headers
+                for attr, value, in response[0].items():
+                    headerRow.append(str(attr))
+                
+                csvwriter.writerow(headerRow)
+                # Write data
+                for item in response:
                     row = []
-                    row.append(i['title'])
-                    row.append(i['year'])
+                    for attr, value, in item.items():
+                        row.append(str(value))
                     csvwriter.writerow(row)
-                else:
-                    print ( "title - ", i['title'])
-                    print ( "year -", i['year'])
+                print("Successfully printed to CSV /downloads/response.csv")
+            else:
+                for item in response:
+                    for attr, value, in item.items():
+                        print(str(attr) + " - " + str(value))
     except Exception as e:
         print(e)
-        print('[Inproper query. Fields may not exist]')
-    
+        print("Error printing items")
 
 def query():
-    global primaryValue, primaryValueStart, primaryValueEnd, secondaryValue, secondaryValueStart, secondaryValueEnd, filterName, filterExpression, filterValue
-    try:
-        if primaryValue:
-            fe = Key('year').eq(primaryValue)
-        elif primaryValueStart:
-            fe = Key('year').between(primaryValueStart, primaryValueEnd)
+    global fields, primaryValue, primaryValueStart, primaryValueEnd, secondaryValue, secondaryValueStart, secondaryValueEnd, filterName, filterExpression, filterValue
+    filtersEnabled = False
+    if (fields):
+        fields = fields.replace(",", ",c.")
+        fields = "c." + fields
+        query = "SELECT " + fields + " FROM c "
+    else:
+        query = "SELECT c.year, c.title FROM c "
+
+    if primaryValue:
+        query = query + "WHERE c.year=" + str(primaryValue) + " "
+        filtersEnabled = True
+    elif primaryValueStart:
+        query = query + "WHERE (c.year BETWEEN " + str(primaryValueStart) + " AND " + str(primaryValueEnd) + ") "
+        filtersEnabled = True
+    
+    if secondaryValue:
+        if filtersEnabled == False:
+            query = query + "WHERE c.title='" + str(secondaryValue) + "' "
+            filtersEnabled = True
         else:
-            fe = None
+            query = query + "AND c.title='" + str(secondaryValue) + "' "
+            filtersEnabled = True
+    elif secondaryValueStart:
+        if filtersEnabled == False:
+            query = query + "WHERE (c.title BETWEEN '" + str(secondaryValueStart) + "' AND '" + str(secondaryValueEnd) + "') "
+            filtersEnabled = True
+        else:
+            query = query + "AND (c.title BETWEEN " + str(secondaryValueStart) + " AND " + str(secondaryValueEnd) + "') "
         
-        if secondaryValue:
-            if fe is None:
-                fe = Key('title').eq(secondaryValue)
+    if filterName:
+        if filterExpression == 'eq':
+            if filtersEnabled == False:
+                query = query + "WHERE c."+filterName+" = " + str(filterValue) + " "
+                filtersEnabled = True
             else:
-                fe = And(fe, Key('title').eq(secondaryValue))
-        elif secondaryValueStart:
-            if fe is None:
-                fe = Key('title').between(secondaryValueStart, secondaryValueEnd)
+                query = query + "AND c."+filterName+" = " + str(filterValue) + " "
+        elif filterExpression == 'gt':
+            if filtersEnabled == False:
+                query = query + "WHERE c."+filterName+" > " + str(filterValue) + " "
+                filtersEnabled = True
             else:
-                fe = And(fe, Key('title').between(secondaryValueStart, secondaryValueEnd))
+                query = query + "AND c."+filterName+" > " + str(filterValue) + " "
+        elif filterExpression == 'lt':    
+            if filtersEnabled == False:
+                query = query + "WHERE c."+filterName+" < " + str(filterValue) + " "
+                filtersEnabled = True
+            else:
+                query = query + "AND c."+filterName+" < " + str(filterValue) + " "
+    
+    if sort:
+        query = query + "ORDER BY c." + sort + " "
+
+    try:
+        items = list(table.query_items(
+            query=query,
+            enable_cross_partition_query=True
+        ))
             
-        if filterName:
-            if filterExpression == 'eq':
-                if fe is None:
-                    fe = Attr(filterName).eq(filterValue)
-                else:
-                    fe = And(fe, Attr(filterName).eq(filterValue))
-            elif filterExpression == 'gt':
-                if fe is None:
-                    fe = Attr(filterName).gt(filterValue)
-                else: 
-                    fe = And(fe, Attr(filterName).gt(filterValue))
-            elif filterExpression == 'lt':    
-                if fe is None:
-                    fe = Attr(filterName).lt(filterValue)
-                else:   
-                    fe = And(fe, Attr(filterName).lt(filterValue))
-            
-        if fe is None:
-            response = table.scan()
-        else: 
-            response = table.scan(FilterExpression=fe)
-        
-        sort_and_filter_response(response)
+        print("QUERY: " + query)
+        print_response(items)
     except Exception as e:
         print(e)
-        print('[Invalid query. Filters are incorrect]')
+        print('[Invalid query. Filters, sort or fields are incorrect]')
 
 
 if __name__ == "__main__":
