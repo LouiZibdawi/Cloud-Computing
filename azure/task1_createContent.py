@@ -19,7 +19,7 @@ def create_content(containerName, blobs):
     for blobName in blobs:
         try:
             blob_client = blob_service_client.get_blob_client(container=containerName, blob=blobName)
-            with open("/Users/louizibdawi/Documents/5-Winter/CIS4010/data/" + blobName, "rb") as data:
+            with open("/Users/louizibdawi/Documents/5-Winter/Cloud-Computing/data/" + blobName, "rb") as data:
                 blob_client.upload_blob(data)
             print('Successfully created blob: ' + blobName)
         except:
