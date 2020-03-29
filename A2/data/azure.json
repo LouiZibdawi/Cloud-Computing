@@ -1,0 +1,49 @@
+{
+  "instances": [
+    {
+      "platform": "azure",
+      "instance_name": "azure-instance-ubuntu-18.04",
+      "image": "UbuntuLTS",
+      "docker": [
+        {
+          "name": "golang",
+          "background": "Y"
+        },
+        {
+          "name": "gcc",
+          "background": "Y"
+        }
+      ]
+    },
+    {
+      "platform": "azure",
+      "instance_name": "azure-instance-debian-10",
+      "image": "Debian",
+      "docker": [
+        {
+          "name": "golang",
+          "background": "Y"
+        },
+        {
+          "name": "gcc",
+          "background": "Y"
+        }
+      ]
+    },
+    {
+      "platform": "azure",
+      "instance_name": "azure-instance-redhat",
+      "image": "RHEL",
+      "docker": [
+        {
+          "name": "golang",
+          "background": "Y"
+        },
+        {
+          "name": "gcc",
+          "background": "Y"
+        }
+      ]
+    }
+  ]
+}

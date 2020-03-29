@@ -1,0 +1,70 @@
+{
+  "instances": [
+    {
+      "platform": "aws",
+      "instance_name": "aws-instance-amazon-linux-01",
+      "ami": "ami-0e2ff28bfb72a4e45",
+      "instance_type": "t2.micro",
+      "vm": "amazon-linux",
+      "docker": [
+        {
+          "name": "swift",
+          "background": "Y"
+        },
+        {
+          "name": "gcc",
+          "background": "Y"
+        }
+      ],
+      "ssh_user": "ec2-user"
+    },
+    {
+      "platform": "aws",
+      "instance_name": "aws-instance-ubuntu",
+      "ami": "ami-07ebfd5b3428b6f4d",
+      "instance_type": "t2.micro",
+      "vm": "ubuntu",
+      "docker": [
+        {
+          "name": "gcc",
+          "background": "Y"
+        },
+        {
+          "name": "julia",
+          "background": "Y"
+        }
+      ],
+      "ssh_user": "ubuntu"
+    },
+    {
+      "platform": "azure",
+      "instance_name": "azure-instance-ubuntu-18.04",
+      "image": "UbuntuLTS",
+      "docker": [
+        {
+          "name": "golang",
+          "background": "Y"
+        },
+        {
+          "name": "gcc",
+          "background": "Y"
+        }
+      ]
+    },
+    {
+      "platform": "azure",
+      "instance_name": "azure-instance-debian-10",
+      "image": "Debian",
+      "docker": [
+        {
+          "name": "golang",
+          "background": "Y"
+        },
+        {
+          "name": "gcc",
+          "background": "Y"
+        }
+      ]
+    }
+  ]
+}
