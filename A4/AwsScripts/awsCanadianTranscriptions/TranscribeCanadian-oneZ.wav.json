@@ -1,0 +1,206 @@
+{
+  "jobName": "TranscribeCanadian-oneZ.wav",
+  "accountId": "925067108490",
+  "results": {
+    "transcripts": [
+      {
+        "transcript": "this one's coming, men. So I think you coming men enough for all of us."
+      }
+    ],
+    "items": [
+      {
+        "start_time": "0.43",
+        "end_time": "0.64",
+        "alternatives": [
+          {
+            "confidence": "0.9981",
+            "content": "this"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "0.64",
+        "end_time": "0.94",
+        "alternatives": [
+          {
+            "confidence": "0.9558",
+            "content": "one's"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "1.64",
+        "end_time": "2.04",
+        "alternatives": [
+          {
+            "confidence": "0.8667",
+            "content": "coming"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": "0.0",
+            "content": ","
+          }
+        ],
+        "type": "punctuation"
+      },
+      {
+        "start_time": "2.04",
+        "end_time": "2.35",
+        "alternatives": [
+          {
+            "confidence": "0.6409",
+            "content": "men"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": "0.0",
+            "content": "."
+          }
+        ],
+        "type": "punctuation"
+      },
+      {
+        "start_time": "2.39",
+        "end_time": "2.61",
+        "alternatives": [
+          {
+            "confidence": "0.4747",
+            "content": "So"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "2.61",
+        "end_time": "2.7",
+        "alternatives": [
+          {
+            "confidence": "1.0",
+            "content": "I"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "2.7",
+        "end_time": "3.01",
+        "alternatives": [
+          {
+            "confidence": "0.9802",
+            "content": "think"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "3.01",
+        "end_time": "3.18",
+        "alternatives": [
+          {
+            "confidence": "0.9852",
+            "content": "you"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "3.18",
+        "end_time": "3.48",
+        "alternatives": [
+          {
+            "confidence": "0.5854",
+            "content": "coming"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "3.48",
+        "end_time": "3.69",
+        "alternatives": [
+          {
+            "confidence": "0.9307",
+            "content": "men"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "3.69",
+        "end_time": "3.93",
+        "alternatives": [
+          {
+            "confidence": "0.993",
+            "content": "enough"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "3.93",
+        "end_time": "4.08",
+        "alternatives": [
+          {
+            "confidence": "1.0",
+            "content": "for"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "4.08",
+        "end_time": "4.29",
+        "alternatives": [
+          {
+            "confidence": "1.0",
+            "content": "all"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "4.29",
+        "end_time": "4.37",
+        "alternatives": [
+          {
+            "confidence": "1.0",
+            "content": "of"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "4.37",
+        "end_time": "4.69",
+        "alternatives": [
+          {
+            "confidence": "1.0",
+            "content": "us"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": "0.0",
+            "content": "."
+          }
+        ],
+        "type": "punctuation"
+      }
+    ]
+  },
+  "status": "COMPLETED"
+}

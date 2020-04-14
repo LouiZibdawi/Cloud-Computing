@@ -1,0 +1,250 @@
+{
+  "jobName": "TranscribeIrish-AllowingForDeath.wav",
+  "accountId": "925067108490",
+  "results": {
+    "transcripts": [
+      {
+        "transcript": "sink, allowing for a number of deaths and strays, Mikey is convinced over forty five sheep have been stolen."
+      }
+    ],
+    "items": [
+      {
+        "start_time": "0.0",
+        "end_time": "0.49",
+        "alternatives": [
+          {
+            "confidence": "0.5015",
+            "content": "sink"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": "0.0",
+            "content": ","
+          }
+        ],
+        "type": "punctuation"
+      },
+      {
+        "start_time": "0.5",
+        "end_time": "1.38",
+        "alternatives": [
+          {
+            "confidence": "1.0",
+            "content": "allowing"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "1.38",
+        "end_time": "1.54",
+        "alternatives": [
+          {
+            "confidence": "1.0",
+            "content": "for"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "1.54",
+        "end_time": "1.61",
+        "alternatives": [
+          {
+            "confidence": "1.0",
+            "content": "a"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "1.61",
+        "end_time": "1.9",
+        "alternatives": [
+          {
+            "confidence": "1.0",
+            "content": "number"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "1.9",
+        "end_time": "2.01",
+        "alternatives": [
+          {
+            "confidence": "1.0",
+            "content": "of"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "2.01",
+        "end_time": "2.42",
+        "alternatives": [
+          {
+            "confidence": "1.0",
+            "content": "deaths"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "2.43",
+        "end_time": "2.67",
+        "alternatives": [
+          {
+            "confidence": "0.9972",
+            "content": "and"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "2.67",
+        "end_time": "3.26",
+        "alternatives": [
+          {
+            "confidence": "1.0",
+            "content": "strays"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": "0.0",
+            "content": ","
+          }
+        ],
+        "type": "punctuation"
+      },
+      {
+        "start_time": "3.41",
+        "end_time": "3.96",
+        "alternatives": [
+          {
+            "confidence": "0.9954",
+            "content": "Mikey"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "3.96",
+        "end_time": "4.11",
+        "alternatives": [
+          {
+            "confidence": "0.9993",
+            "content": "is"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "4.11",
+        "end_time": "4.66",
+        "alternatives": [
+          {
+            "confidence": "1.0",
+            "content": "convinced"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "4.66",
+        "end_time": "4.92",
+        "alternatives": [
+          {
+            "confidence": "1.0",
+            "content": "over"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "4.92",
+        "end_time": "5.36",
+        "alternatives": [
+          {
+            "confidence": "0.9986",
+            "content": "forty"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "5.36",
+        "end_time": "5.73",
+        "alternatives": [
+          {
+            "confidence": "1.0",
+            "content": "five"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "5.73",
+        "end_time": "6.04",
+        "alternatives": [
+          {
+            "confidence": "1.0",
+            "content": "sheep"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "6.04",
+        "end_time": "6.16",
+        "alternatives": [
+          {
+            "confidence": "0.8122",
+            "content": "have"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "6.17",
+        "end_time": "6.36",
+        "alternatives": [
+          {
+            "confidence": "1.0",
+            "content": "been"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "6.36",
+        "end_time": "7.05",
+        "alternatives": [
+          {
+            "confidence": "1.0",
+            "content": "stolen"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": "0.0",
+            "content": "."
+          }
+        ],
+        "type": "punctuation"
+      }
+    ]
+  },
+  "status": "COMPLETED"
+}

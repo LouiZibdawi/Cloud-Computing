@@ -1,0 +1,321 @@
+{
+  "jobName": "TranscribeIrish-SemiIntelligibleIrish.wav",
+  "accountId": "925067108490",
+  "results": {
+    "transcripts": [
+      {
+        "transcript": "Well, that was fast. E five sheep missing, like in the lamps, you know, within the sheep. Count out tonight to money like"
+      }
+    ],
+    "items": [
+      {
+        "start_time": "0.34",
+        "end_time": "0.57",
+        "alternatives": [
+          {
+            "confidence": "1.0",
+            "content": "Well"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": "0.0",
+            "content": ","
+          }
+        ],
+        "type": "punctuation"
+      },
+      {
+        "start_time": "0.57",
+        "end_time": "0.73",
+        "alternatives": [
+          {
+            "confidence": "1.0",
+            "content": "that"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "0.73",
+        "end_time": "1.11",
+        "alternatives": [
+          {
+            "confidence": "1.0",
+            "content": "was"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "1.11",
+        "end_time": "1.43",
+        "alternatives": [
+          {
+            "confidence": "0.9569",
+            "content": "fast"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": "0.0",
+            "content": "."
+          }
+        ],
+        "type": "punctuation"
+      },
+      {
+        "start_time": "1.43",
+        "end_time": "1.51",
+        "alternatives": [
+          {
+            "confidence": "0.7672",
+            "content": "E"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "1.51",
+        "end_time": "1.76",
+        "alternatives": [
+          {
+            "confidence": "0.998",
+            "content": "five"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "1.76",
+        "end_time": "2.06",
+        "alternatives": [
+          {
+            "confidence": "0.9282",
+            "content": "sheep"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "2.06",
+        "end_time": "2.4",
+        "alternatives": [
+          {
+            "confidence": "0.9081",
+            "content": "missing"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": "0.0",
+            "content": ","
+          }
+        ],
+        "type": "punctuation"
+      },
+      {
+        "start_time": "2.4",
+        "end_time": "2.73",
+        "alternatives": [
+          {
+            "confidence": "0.9546",
+            "content": "like"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "2.73",
+        "end_time": "2.86",
+        "alternatives": [
+          {
+            "confidence": "0.9546",
+            "content": "in"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "2.86",
+        "end_time": "2.99",
+        "alternatives": [
+          {
+            "confidence": "1.0",
+            "content": "the"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "2.99",
+        "end_time": "3.42",
+        "alternatives": [
+          {
+            "confidence": "0.5571",
+            "content": "lamps"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": "0.0",
+            "content": ","
+          }
+        ],
+        "type": "punctuation"
+      },
+      {
+        "start_time": "3.42",
+        "end_time": "3.5",
+        "alternatives": [
+          {
+            "confidence": "0.3531",
+            "content": "you"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "3.5",
+        "end_time": "3.68",
+        "alternatives": [
+          {
+            "confidence": "0.6562",
+            "content": "know"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": "0.0",
+            "content": ","
+          }
+        ],
+        "type": "punctuation"
+      },
+      {
+        "start_time": "3.68",
+        "end_time": "4.05",
+        "alternatives": [
+          {
+            "confidence": "0.998",
+            "content": "within"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "4.05",
+        "end_time": "4.14",
+        "alternatives": [
+          {
+            "confidence": "0.9969",
+            "content": "the"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "4.14",
+        "end_time": "4.54",
+        "alternatives": [
+          {
+            "confidence": "0.8389",
+            "content": "sheep"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": "0.0",
+            "content": "."
+          }
+        ],
+        "type": "punctuation"
+      },
+      {
+        "start_time": "5.04",
+        "end_time": "5.5",
+        "alternatives": [
+          {
+            "confidence": "0.9944",
+            "content": "Count"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "5.5",
+        "end_time": "5.65",
+        "alternatives": [
+          {
+            "confidence": "1.0",
+            "content": "out"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "5.65",
+        "end_time": "5.95",
+        "alternatives": [
+          {
+            "confidence": "0.584",
+            "content": "tonight"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "6.04",
+        "end_time": "6.17",
+        "alternatives": [
+          {
+            "confidence": "0.774",
+            "content": "to"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "6.17",
+        "end_time": "6.46",
+        "alternatives": [
+          {
+            "confidence": "0.9975",
+            "content": "money"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "6.46",
+        "end_time": "6.87",
+        "alternatives": [
+          {
+            "confidence": "1.0",
+            "content": "like"
+          }
+        ],
+        "type": "pronunciation"
+      }
+    ]
+  },
+  "status": "COMPLETED"
+}

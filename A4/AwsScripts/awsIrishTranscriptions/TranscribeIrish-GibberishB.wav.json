@@ -1,0 +1,250 @@
+{
+  "jobName": "TranscribeIrish-GibberishB.wav",
+  "accountId": "925067108490",
+  "results": {
+    "transcripts": [
+      {
+        "transcript": "possible tonight. Be a full moon that night and should be bright out. Could anyone up in the mountains?"
+      }
+    ],
+    "items": [
+      {
+        "start_time": "0.34",
+        "end_time": "0.8",
+        "alternatives": [
+          {
+            "confidence": "0.7022",
+            "content": "possible"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "0.81",
+        "end_time": "1.43",
+        "alternatives": [
+          {
+            "confidence": "0.6175",
+            "content": "tonight"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": "0.0",
+            "content": "."
+          }
+        ],
+        "type": "punctuation"
+      },
+      {
+        "start_time": "1.48",
+        "end_time": "1.74",
+        "alternatives": [
+          {
+            "confidence": "0.8822",
+            "content": "Be"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "1.74",
+        "end_time": "1.82",
+        "alternatives": [
+          {
+            "confidence": "0.8818",
+            "content": "a"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "1.82",
+        "end_time": "2.02",
+        "alternatives": [
+          {
+            "confidence": "0.8795",
+            "content": "full"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "2.02",
+        "end_time": "2.31",
+        "alternatives": [
+          {
+            "confidence": "0.824",
+            "content": "moon"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "2.31",
+        "end_time": "2.46",
+        "alternatives": [
+          {
+            "confidence": "0.7202",
+            "content": "that"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "2.72",
+        "end_time": "3.01",
+        "alternatives": [
+          {
+            "confidence": "0.9426",
+            "content": "night"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "3.01",
+        "end_time": "3.18",
+        "alternatives": [
+          {
+            "confidence": "0.6411",
+            "content": "and"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "3.21",
+        "end_time": "3.49",
+        "alternatives": [
+          {
+            "confidence": "0.9166",
+            "content": "should"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "3.5",
+        "end_time": "3.81",
+        "alternatives": [
+          {
+            "confidence": "0.9965",
+            "content": "be"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "3.81",
+        "end_time": "4.18",
+        "alternatives": [
+          {
+            "confidence": "0.9975",
+            "content": "bright"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "4.18",
+        "end_time": "4.51",
+        "alternatives": [
+          {
+            "confidence": "1.0",
+            "content": "out"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": "0.0",
+            "content": "."
+          }
+        ],
+        "type": "punctuation"
+      },
+      {
+        "start_time": "4.52",
+        "end_time": "4.8",
+        "alternatives": [
+          {
+            "confidence": "1.0",
+            "content": "Could"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "4.8",
+        "end_time": "5.2",
+        "alternatives": [
+          {
+            "confidence": "0.9997",
+            "content": "anyone"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "5.25",
+        "end_time": "5.38",
+        "alternatives": [
+          {
+            "confidence": "0.9756",
+            "content": "up"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "5.38",
+        "end_time": "5.46",
+        "alternatives": [
+          {
+            "confidence": "0.9871",
+            "content": "in"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "5.46",
+        "end_time": "5.54",
+        "alternatives": [
+          {
+            "confidence": "1.0",
+            "content": "the"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "5.54",
+        "end_time": "5.98",
+        "alternatives": [
+          {
+            "confidence": "0.9998",
+            "content": "mountains"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": "0.0",
+            "content": "?"
+          }
+        ],
+        "type": "punctuation"
+      }
+    ]
+  },
+  "status": "COMPLETED"
+}

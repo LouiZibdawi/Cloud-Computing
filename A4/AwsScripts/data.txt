@@ -1,0 +1,19 @@
+Irish
+  AllowingForDeath - 0 errors/18 = 0%
+  GibberishA - 10 errors/8 = 125%
+  GibberishB - 10 errors/23 = 43.5%
+  NotDifficult - 17 errors/47 = 36.2%
+  SemiIntelligibleIrish - 13 errors/15 = 86.7%
+
+  (0 + 125 + 43.5 + 36.2 + 86.7) / 5 = 58.3%
+
+Canadian
+
+  GoTime - 27 errors/115 = 23.5%
+  HowAreYous - 24 errors/77 = 31.2%
+  OneZ - 5 errors/18 = 27.8%
+  TalkToAngieYet - 4 errors/115 = 3.5%
+
+  (23.5 + 31.2 + 27.8 + 3.5) / 4 = 21.5%
+
+  

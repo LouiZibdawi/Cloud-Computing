@@ -1,0 +1,142 @@
+{
+  "jobName": "TranscribeIrish-GibberishA.wav",
+  "accountId": "925067108490",
+  "results": {
+    "transcripts": [
+      {
+        "transcript": "when they find out that's writing, you want some street?"
+      }
+    ],
+    "items": [
+      {
+        "start_time": "0.04",
+        "end_time": "0.18",
+        "alternatives": [
+          {
+            "confidence": "0.9611",
+            "content": "when"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "0.18",
+        "end_time": "0.35",
+        "alternatives": [
+          {
+            "confidence": "0.9589",
+            "content": "they"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "0.36",
+        "end_time": "0.83",
+        "alternatives": [
+          {
+            "confidence": "1.0",
+            "content": "find"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "0.83",
+        "end_time": "0.97",
+        "alternatives": [
+          {
+            "confidence": "0.7884",
+            "content": "out"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "1.57",
+        "end_time": "1.83",
+        "alternatives": [
+          {
+            "confidence": "0.4608",
+            "content": "that's"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "1.83",
+        "end_time": "2.58",
+        "alternatives": [
+          {
+            "confidence": "0.9838",
+            "content": "writing"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": "0.0",
+            "content": ","
+          }
+        ],
+        "type": "punctuation"
+      },
+      {
+        "start_time": "3.91",
+        "end_time": "4.15",
+        "alternatives": [
+          {
+            "confidence": "0.9981",
+            "content": "you"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "4.15",
+        "end_time": "4.31",
+        "alternatives": [
+          {
+            "confidence": "0.9236",
+            "content": "want"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "4.31",
+        "end_time": "4.49",
+        "alternatives": [
+          {
+            "confidence": "0.9815",
+            "content": "some"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "4.49",
+        "end_time": "5.02",
+        "alternatives": [
+          {
+            "confidence": "0.5394",
+            "content": "street"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": "0.0",
+            "content": "?"
+          }
+        ],
+        "type": "punctuation"
+      }
+    ]
+  },
+  "status": "COMPLETED"
+}
